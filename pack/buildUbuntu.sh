@@ -10,7 +10,7 @@ apt install -y openssl
 apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 apt install -y qttools5-dev
 apt install -y ninja-build
-apt install -y lua5.2
+apt install -y lua5.2 liblua5.2-dev
 cd ../
 git fetch
 git submodule init
@@ -24,6 +24,7 @@ cd ../../..
 mkdir -vp build/release
 cd build/release
 cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ../..
+apt purge -y liblua5.2-dev
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ../..
 ninja
-
 
