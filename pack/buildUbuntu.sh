@@ -1,3 +1,5 @@
+ls
+pwd
 apt install -y build-essential libgl1-mesa-dev
 apt install -y cmake
 apt install -y libgit2-dev
