@@ -9,7 +9,7 @@ apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 apt install -y qttools5-dev
 apt install -y ninja-build
 apt install -y lua5.2
-cd ../../..
+cd ../
 git fetch
 git submodule init
 git submodule update
